@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct ZMoviesApp: App {
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView().modifier(DarkModeViewModifier())
         }
     }
+    
 }
