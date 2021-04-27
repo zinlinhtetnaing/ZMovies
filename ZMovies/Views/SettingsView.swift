@@ -33,7 +33,8 @@ struct SettingsView: View {
                             .foregroundColor(.gray)
                         Toggle(isOn: $isDarkMode) {
                             Text("Dark Mode").foregroundColor(.blue)
-                        }.toggleStyle(CheckmarkToggleStyle())
+                        }
+//                        .toggleStyle(PowerToggleStyle())
                     }
                 }.listRowBackground(Color.gray.opacity(0.05))
                 
@@ -64,7 +65,7 @@ struct SettingsView: View {
                 
             }.navigationTitle("Settings")
         }
-        .modifier(DarkModeViewModifier())
+        
     }
     
 }

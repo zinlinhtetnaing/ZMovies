@@ -20,7 +20,7 @@ struct ContentView: View {
                 settingsButton
             })
             .sheet(isPresented: $showSettings, content: {
-                SettingsView(isPresented: $showSettings)
+                SettingsView(isPresented: $showSettings).modifier(DarkModeViewModifier())
             })
         }
     }
